@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="containView" destination="QfN-HH-ev2" id="bqI-dw-wHw"/>
                 <outlet property="scrollView" destination="5J4-af-ByO" id="SSr-mB-q1c"/>
+                <outlet property="tableView" destination="yQn-WX-xZz" id="Rdo-c4-H8F"/>
                 <outlet property="view" destination="iN0-l3-epB" id="lN7-3p-8hD"/>
             </connections>
         </placeholder>
@@ -29,6 +30,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="U0M-om-mWQ"/>
+                                        <outlet property="delegate" destination="-1" id="zyd-tx-C8e"/>
+                                    </connections>
                                 </tableView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THq-aO-wCl" userLabel="Other view">
                                     <rect key="frame" x="320" y="0.0" width="320" height="568"/>
