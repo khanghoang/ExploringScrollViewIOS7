@@ -14,11 +14,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlC-sI-D4z">
-                        <rect key="frame" x="-320" y="0.0" width="640" height="89"/>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlC-sI-D4z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-Hq-QQ4" userLabel="Content View">
+                                <rect key="frame" x="-320" y="0.0" width="640" height="89"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="640" id="Dd0-8Q-qBZ"/>
+                                    <constraint firstAttribute="height" constant="89" id="buZ-az-Ig7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="h1n-Hq-QQ4" secondAttribute="bottom" id="1SK-Fm-JkP"/>
+                            <constraint firstItem="h1n-Hq-QQ4" firstAttribute="leading" secondItem="nlC-sI-D4z" secondAttribute="leading" constant="-320" id="5AO-1W-dV9"/>
+                            <constraint firstAttribute="trailing" secondItem="h1n-Hq-QQ4" secondAttribute="trailing" id="MX1-CY-W8h"/>
+                            <constraint firstItem="h1n-Hq-QQ4" firstAttribute="top" secondItem="nlC-sI-D4z" secondAttribute="top" id="NEj-bg-NCH"/>
+                        </constraints>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="nlC-sI-D4z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Gy-fw-Ov4"/>
+                    <constraint firstAttribute="bottom" secondItem="nlC-sI-D4z" secondAttribute="bottom" id="8et-M9-w6x"/>
+                    <constraint firstItem="nlC-sI-D4z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rcp-05-gsx"/>
+                    <constraint firstAttribute="trailing" secondItem="nlC-sI-D4z" secondAttribute="trailing" id="xHF-c0-T0Z"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="scrollView" destination="nlC-sI-D4z" id="kIJ-ur-dCs"/>
