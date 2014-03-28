@@ -10,4 +10,6 @@
 
 @interface TKScrollCell : UITableViewCell
 
+- (void)setScrollViewBackgroundColor:(UIColor *)color;
+
 @end

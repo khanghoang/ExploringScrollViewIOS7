@@ -37,9 +37,17 @@ UITableViewDataSource
     return 10;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TKScrollCell *scrollCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TKScrollCell class]) forIndexPath:indexPath];
+
+    [scrollCell setScrollViewBackgroundColor:[UIColor blueColor]];
+
     return scrollCell;
 }
 

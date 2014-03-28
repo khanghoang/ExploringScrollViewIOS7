@@ -8,18 +8,17 @@
 
 #import "TKScrollCell.h"
 
+@interface TKScrollCell ()
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@end
+
 @implementation TKScrollCell
 
-- (void)awakeFromNib
+- (void)setScrollViewBackgroundColor:(UIColor *)color
 {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    self.scrollView.backgroundColor = color;
 }
 
 @end
