@@ -34,6 +34,9 @@
                             <constraint firstAttribute="trailing" secondItem="h1n-Hq-QQ4" secondAttribute="trailing" id="MX1-CY-W8h"/>
                             <constraint firstItem="h1n-Hq-QQ4" firstAttribute="top" secondItem="nlC-sI-D4z" secondAttribute="top" id="NEj-bg-NCH"/>
                         </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="gcs-9z-cvn"/>
+                        </connections>
                     </scrollView>
                 </subviews>
                 <constraints>
@@ -44,6 +47,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="containView" destination="h1n-Hq-QQ4" id="P4U-BV-agl"/>
                 <outlet property="scrollView" destination="nlC-sI-D4z" id="kIJ-ur-dCs"/>
             </connections>
         </tableViewCell>

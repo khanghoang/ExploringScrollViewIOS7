@@ -66,6 +66,9 @@
                         <constraint firstItem="QfN-HH-ev2" firstAttribute="leading" secondItem="5J4-af-ByO" secondAttribute="leading" id="aps-nD-tuv"/>
                         <constraint firstItem="QfN-HH-ev2" firstAttribute="top" secondItem="5J4-af-ByO" secondAttribute="top" id="tp2-LY-c3b"/>
                     </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="CrK-gZ-PU2"/>
+                    </connections>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

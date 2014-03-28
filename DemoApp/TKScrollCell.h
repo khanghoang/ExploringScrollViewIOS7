@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TKScrollCellProtocol <NSObject>
+
+- (void)beginScrollWithCell:(id)cell;
+
+@end
+
 @interface TKScrollCell : UITableViewCell
+
+@property (nonatomic, weak) id<TKScrollCellProtocol> delegate;
 
 - (void)setScrollViewBackgroundColor:(UIColor *)color;
 

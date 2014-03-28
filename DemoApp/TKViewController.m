@@ -13,7 +13,8 @@
 @interface TKViewController ()
 <
 UITableViewDelegate,
-UITableViewDataSource
+UITableViewDataSource,
+TKScrollCellProtocol
 >
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -45,10 +46,18 @@ UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TKScrollCell *scrollCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TKScrollCell class]) forIndexPath:indexPath];
+    scrollCell.delegate = self;
 
     [scrollCell setScrollViewBackgroundColor:[UIColor blueColor]];
 
     return scrollCell;
+}
+
+#pragma mark - TKScrollCell delegate
+
+- (void)beginScrollWithCell:(id)cell
+{
+    self.scrollView.userInteractionEnabled = NO;
 }
 
 @end
