@@ -23,6 +23,8 @@
 		B45D523218E53E7400DBD47F /* TKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45D523118E53E7400DBD47F /* TKViewController.xib */; };
 		B461D76918E56A1900DA6240 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B461D76818E56A1900DA6240 /* UIView+AutoLayout.m */; };
 		B461D76B18E5701D00DA6240 /* ExploringScrollViewIOS7-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B461D76A18E5701D00DA6240 /* ExploringScrollViewIOS7-Info.plist */; };
+		B461D76F18E579CD00DA6240 /* TKScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B461D76D18E579CD00DA6240 /* TKScrollCell.m */; };
+		B461D77018E579CD00DA6240 /* TKScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B461D76E18E579CD00DA6240 /* TKScrollCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		B461D76718E56A1900DA6240 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		B461D76818E56A1900DA6240 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		B461D76A18E5701D00DA6240 /* ExploringScrollViewIOS7-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ExploringScrollViewIOS7-Info.plist"; sourceTree = "<group>"; };
+		B461D76C18E579CD00DA6240 /* TKScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKScrollCell.h; sourceTree = "<group>"; };
+		B461D76D18E579CD00DA6240 /* TKScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKScrollCell.m; sourceTree = "<group>"; };
+		B461D76E18E579CD00DA6240 /* TKScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKScrollCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,9 @@
 				B45D521118E535F400DBD47F /* TKViewController.h */,
 				B45D521218E535F400DBD47F /* TKViewController.m */,
 				B45D523118E53E7400DBD47F /* TKViewController.xib */,
+				B461D76C18E579CD00DA6240 /* TKScrollCell.h */,
+				B461D76D18E579CD00DA6240 /* TKScrollCell.m */,
+				B461D76E18E579CD00DA6240 /* TKScrollCell.xib */,
 				B45D521418E535F400DBD47F /* Images.xcassets */,
 				B45D520318E535F400DBD47F /* Supporting Files */,
 			);
@@ -235,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B461D77018E579CD00DA6240 /* TKScrollCell.xib in Resources */,
 				B45D521518E535F400DBD47F /* Images.xcassets in Resources */,
 				B461D76B18E5701D00DA6240 /* ExploringScrollViewIOS7-Info.plist in Resources */,
 				B45D520718E535F400DBD47F /* InfoPlist.strings in Resources */,
@@ -258,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45D521318E535F400DBD47F /* TKViewController.m in Sources */,
+				B461D76F18E579CD00DA6240 /* TKScrollCell.m in Sources */,
 				B461D76918E56A1900DA6240 /* UIView+AutoLayout.m in Sources */,
 				B45D520918E535F400DBD47F /* main.m in Sources */,
 				B45D520D18E535F400DBD47F /* TKAppDelegate.m in Sources */,

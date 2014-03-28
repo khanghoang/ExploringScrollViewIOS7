@@ -8,6 +8,7 @@
 
 #import "TKViewController.h"
 #import "UIView+AutoLayout.h"
+#import "TKScrollCell.h"
 
 @interface TKViewController ()
 
@@ -22,15 +23,7 @@
 {
     [super viewDidLoad];
 
-    self.containView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.scrollView.translatesAutoresizingMaskIntoConstraints = NO;
-
     [self.containView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-
-//    NSDictionary *views = @{@"beeView":self.containView};
-//
-//    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[beeView(6000)]|" options:kNilOptions metrics:nil views:views]];
-//    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[beeView(9000)]|" options:kNilOptions metrics:nil views:views]];
 }
 
 @end
