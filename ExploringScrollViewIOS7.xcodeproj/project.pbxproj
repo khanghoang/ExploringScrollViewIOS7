@@ -35,22 +35,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B45D51F918E535F400DBD47F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45D51F918E535F400DBD47F /* ExploringScrollViewIOS7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploringScrollViewIOS7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45D51FC18E535F400DBD47F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B45D51FE18E535F400DBD47F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B45D520018E535F400DBD47F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B45D520418E535F400DBD47F /* DemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoApp-Info.plist"; sourceTree = "<group>"; };
 		B45D520618E535F400DBD47F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B45D520818E535F400DBD47F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B45D520A18E535F400DBD47F /* DemoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoApp-Prefix.pch"; sourceTree = "<group>"; };
+		B45D520A18E535F400DBD47F /* ExploringScrollViewIOS7-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExploringScrollViewIOS7-Prefix.pch"; sourceTree = "<group>"; };
 		B45D520B18E535F400DBD47F /* TKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKAppDelegate.h; sourceTree = "<group>"; };
 		B45D520C18E535F400DBD47F /* TKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKAppDelegate.m; sourceTree = "<group>"; };
 		B45D521118E535F400DBD47F /* TKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKViewController.h; sourceTree = "<group>"; };
 		B45D521218E535F400DBD47F /* TKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKViewController.m; sourceTree = "<group>"; };
 		B45D521418E535F400DBD47F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B45D521A18E535F400DBD47F /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45D521A18E535F400DBD47F /* ExploringScrollViewIOS7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploringScrollViewIOS7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45D521B18E535F400DBD47F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B45D522318E535F400DBD47F /* DemoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoAppTests-Info.plist"; sourceTree = "<group>"; };
+		B45D522318E535F400DBD47F /* ExploringScrollViewIOS7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExploringScrollViewIOS7Tests-Info.plist"; sourceTree = "<group>"; };
 		B45D522518E535F400DBD47F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B45D522718E535F400DBD47F /* DemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppTests.m; sourceTree = "<group>"; };
 		B45D523118E53E7400DBD47F /* TKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKViewController.xib; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		B45D51FA18E535F400DBD47F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B45D51F918E535F400DBD47F /* DemoApp.app */,
-				B45D521A18E535F400DBD47F /* DemoAppTests.xctest */,
+				B45D51F918E535F400DBD47F /* ExploringScrollViewIOS7.app */,
+				B45D521A18E535F400DBD47F /* ExploringScrollViewIOS7Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 				B45D520418E535F400DBD47F /* DemoApp-Info.plist */,
 				B45D520518E535F400DBD47F /* InfoPlist.strings */,
 				B45D520818E535F400DBD47F /* main.m */,
-				B45D520A18E535F400DBD47F /* DemoApp-Prefix.pch */,
+				B45D520A18E535F400DBD47F /* ExploringScrollViewIOS7-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 		B45D522218E535F400DBD47F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B45D522318E535F400DBD47F /* DemoAppTests-Info.plist */,
+				B45D522318E535F400DBD47F /* ExploringScrollViewIOS7Tests-Info.plist */,
 				B45D522418E535F400DBD47F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B45D51F818E535F400DBD47F /* DemoApp */ = {
+		B45D51F818E535F400DBD47F /* ExploringScrollViewIOS7 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B45D522B18E535F400DBD47F /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildConfigurationList = B45D522B18E535F400DBD47F /* Build configuration list for PBXNativeTarget "ExploringScrollViewIOS7" */;
 			buildPhases = (
 				B45D51F518E535F400DBD47F /* Sources */,
 				B45D51F618E535F400DBD47F /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = DemoApp;
+			name = ExploringScrollViewIOS7;
 			productName = DemoApp;
-			productReference = B45D51F918E535F400DBD47F /* DemoApp.app */;
+			productReference = B45D51F918E535F400DBD47F /* ExploringScrollViewIOS7.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B45D521918E535F400DBD47F /* DemoAppTests */ = {
+		B45D521918E535F400DBD47F /* ExploringScrollViewIOS7Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B45D522E18E535F400DBD47F /* Build configuration list for PBXNativeTarget "DemoAppTests" */;
+			buildConfigurationList = B45D522E18E535F400DBD47F /* Build configuration list for PBXNativeTarget "ExploringScrollViewIOS7Tests" */;
 			buildPhases = (
 				B45D521618E535F400DBD47F /* Sources */,
 				B45D521718E535F400DBD47F /* Frameworks */,
@@ -190,9 +190,9 @@
 			dependencies = (
 				B45D522018E535F400DBD47F /* PBXTargetDependency */,
 			);
-			name = DemoAppTests;
+			name = ExploringScrollViewIOS7Tests;
 			productName = DemoAppTests;
-			productReference = B45D521A18E535F400DBD47F /* DemoAppTests.xctest */;
+			productReference = B45D521A18E535F400DBD47F /* ExploringScrollViewIOS7Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B45D51F418E535F400DBD47F /* Build configuration list for PBXProject "DemoApp" */;
+			buildConfigurationList = B45D51F418E535F400DBD47F /* Build configuration list for PBXProject "ExploringScrollViewIOS7" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B45D51F818E535F400DBD47F /* DemoApp */,
-				B45D521918E535F400DBD47F /* DemoAppTests */,
+				B45D51F818E535F400DBD47F /* ExploringScrollViewIOS7 */,
+				B45D521918E535F400DBD47F /* ExploringScrollViewIOS7Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		B45D522018E535F400DBD47F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B45D51F818E535F400DBD47F /* DemoApp */;
+			target = B45D51F818E535F400DBD47F /* ExploringScrollViewIOS7 */;
 			targetProxy = B45D521F18E535F400DBD47F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -376,10 +376,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "DemoApp/ExploringScrollViewIOS7-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExploringScrollViewIOS7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "DemoApp/ExploringScrollViewIOS7-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExploringScrollViewIOS7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -413,8 +413,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DemoAppTests/DemoAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DemoAppTests/ExploringScrollViewIOS7Tests-Info.plist";
+				PRODUCT_NAME = ExploringScrollViewIOS7Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -431,8 +431,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
-				INFOPLIST_FILE = "DemoAppTests/DemoAppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DemoAppTests/ExploringScrollViewIOS7Tests-Info.plist";
+				PRODUCT_NAME = ExploringScrollViewIOS7Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -441,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B45D51F418E535F400DBD47F /* Build configuration list for PBXProject "DemoApp" */ = {
+		B45D51F418E535F400DBD47F /* Build configuration list for PBXProject "ExploringScrollViewIOS7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B45D522918E535F400DBD47F /* Debug */,
@@ -450,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B45D522B18E535F400DBD47F /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+		B45D522B18E535F400DBD47F /* Build configuration list for PBXNativeTarget "ExploringScrollViewIOS7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B45D522C18E535F400DBD47F /* Debug */,
@@ -459,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B45D522E18E535F400DBD47F /* Build configuration list for PBXNativeTarget "DemoAppTests" */ = {
+		B45D522E18E535F400DBD47F /* Build configuration list for PBXNativeTarget "ExploringScrollViewIOS7Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B45D522F18E535F400DBD47F /* Debug */,
