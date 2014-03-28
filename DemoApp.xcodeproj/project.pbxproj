@@ -13,7 +13,6 @@
 		B45D520718E535F400DBD47F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B45D520518E535F400DBD47F /* InfoPlist.strings */; };
 		B45D520918E535F400DBD47F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B45D520818E535F400DBD47F /* main.m */; };
 		B45D520D18E535F400DBD47F /* TKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B45D520C18E535F400DBD47F /* TKAppDelegate.m */; };
-		B45D521018E535F400DBD47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45D520E18E535F400DBD47F /* Main.storyboard */; };
 		B45D521318E535F400DBD47F /* TKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45D521218E535F400DBD47F /* TKViewController.m */; };
 		B45D521518E535F400DBD47F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45D521418E535F400DBD47F /* Images.xcassets */; };
 		B45D521C18E535F400DBD47F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D521B18E535F400DBD47F /* XCTest.framework */; };
@@ -21,6 +20,8 @@
 		B45D521E18E535F400DBD47F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D520018E535F400DBD47F /* UIKit.framework */; };
 		B45D522618E535F400DBD47F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B45D522418E535F400DBD47F /* InfoPlist.strings */; };
 		B45D522818E535F400DBD47F /* DemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45D522718E535F400DBD47F /* DemoAppTests.m */; };
+		B45D523218E53E7400DBD47F /* TKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45D523118E53E7400DBD47F /* TKViewController.xib */; };
+		B461D76918E56A1900DA6240 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B461D76818E56A1900DA6240 /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		B45D520A18E535F400DBD47F /* DemoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoApp-Prefix.pch"; sourceTree = "<group>"; };
 		B45D520B18E535F400DBD47F /* TKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKAppDelegate.h; sourceTree = "<group>"; };
 		B45D520C18E535F400DBD47F /* TKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKAppDelegate.m; sourceTree = "<group>"; };
-		B45D520F18E535F400DBD47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B45D521118E535F400DBD47F /* TKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKViewController.h; sourceTree = "<group>"; };
 		B45D521218E535F400DBD47F /* TKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKViewController.m; sourceTree = "<group>"; };
 		B45D521418E535F400DBD47F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,9 @@
 		B45D522318E535F400DBD47F /* DemoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoAppTests-Info.plist"; sourceTree = "<group>"; };
 		B45D522518E535F400DBD47F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B45D522718E535F400DBD47F /* DemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppTests.m; sourceTree = "<group>"; };
+		B45D523118E53E7400DBD47F /* TKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKViewController.xib; sourceTree = "<group>"; };
+		B461D76718E56A1900DA6240 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		B461D76818E56A1900DA6240 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,13 @@
 		B45D520218E535F400DBD47F /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B461D76718E56A1900DA6240 /* UIView+AutoLayout.h */,
+				B461D76818E56A1900DA6240 /* UIView+AutoLayout.m */,
 				B45D520B18E535F400DBD47F /* TKAppDelegate.h */,
 				B45D520C18E535F400DBD47F /* TKAppDelegate.m */,
-				B45D520E18E535F400DBD47F /* Main.storyboard */,
 				B45D521118E535F400DBD47F /* TKViewController.h */,
 				B45D521218E535F400DBD47F /* TKViewController.m */,
+				B45D523118E53E7400DBD47F /* TKViewController.xib */,
 				B45D521418E535F400DBD47F /* Images.xcassets */,
 				B45D520318E535F400DBD47F /* Supporting Files */,
 			);
@@ -231,7 +236,7 @@
 			files = (
 				B45D521518E535F400DBD47F /* Images.xcassets in Resources */,
 				B45D520718E535F400DBD47F /* InfoPlist.strings in Resources */,
-				B45D521018E535F400DBD47F /* Main.storyboard in Resources */,
+				B45D523218E53E7400DBD47F /* TKViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45D521318E535F400DBD47F /* TKViewController.m in Sources */,
+				B461D76918E56A1900DA6240 /* UIView+AutoLayout.m in Sources */,
 				B45D520918E535F400DBD47F /* main.m in Sources */,
 				B45D520D18E535F400DBD47F /* TKAppDelegate.m in Sources */,
 			);
@@ -281,14 +287,6 @@
 				B45D520618E535F400DBD47F /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B45D520E18E535F400DBD47F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B45D520F18E535F400DBD47F /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		B45D522418E535F400DBD47F /* InfoPlist.strings */ = {
@@ -380,6 +378,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +392,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +457,7 @@
 				B45D522D18E535F400DBD47F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B45D522E18E535F400DBD47F /* Build configuration list for PBXNativeTarget "DemoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +466,7 @@
 				B45D523018E535F400DBD47F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

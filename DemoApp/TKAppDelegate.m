@@ -7,11 +7,25 @@
 //
 
 #import "TKAppDelegate.h"
+#import "TKViewController.h"
 
 @implementation TKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    TKViewController * viewController = [[TKViewController alloc] initWithNibName:@"TKViewController" bundle:nil];
+    self.window.rootViewController = viewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    return YES;
+    
+    return YES;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    TKViewController *vc = [[TKViewController alloc] init];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }
