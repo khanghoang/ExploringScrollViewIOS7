@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B45D51F818E535F400DBD47F"
-               BuildableName = "DemoApp.app"
+               BuildableName = "ExploringScrollViewIOS7.app"
                BlueprintName = "ExploringScrollViewIOS7"
                ReferencedContainer = "container:ExploringScrollViewIOS7.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B45D521918E535F400DBD47F"
-               BuildableName = "DemoAppTests.xctest"
+               BuildableName = "ExploringScrollViewIOS7Tests.xctest"
                BlueprintName = "ExploringScrollViewIOS7Tests"
                ReferencedContainer = "container:ExploringScrollViewIOS7.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B45D51F818E535F400DBD47F"
-            BuildableName = "DemoApp.app"
+            BuildableName = "ExploringScrollViewIOS7.app"
             BlueprintName = "ExploringScrollViewIOS7"
             ReferencedContainer = "container:ExploringScrollViewIOS7.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B45D51F818E535F400DBD47F"
-            BuildableName = "DemoApp.app"
+            BuildableName = "ExploringScrollViewIOS7.app"
             BlueprintName = "ExploringScrollViewIOS7"
             ReferencedContainer = "container:ExploringScrollViewIOS7.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B45D51F818E535F400DBD47F"
-            BuildableName = "DemoApp.app"
+            BuildableName = "ExploringScrollViewIOS7.app"
             BlueprintName = "ExploringScrollViewIOS7"
             ReferencedContainer = "container:ExploringScrollViewIOS7.xcodeproj">
          </BuildableReference>

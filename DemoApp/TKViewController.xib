@@ -62,6 +62,7 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="QfN-HH-ev2" secondAttribute="trailing" id="15D-4c-BTg"/>
                         <constraint firstAttribute="bottom" secondItem="QfN-HH-ev2" secondAttribute="bottom" id="PMA-SF-rzR"/>
+                        <constraint firstItem="yQn-WX-xZz" firstAttribute="height" secondItem="5J4-af-ByO" secondAttribute="height" id="Stp-Rc-Nt2"/>
                         <constraint firstItem="QfN-HH-ev2" firstAttribute="leading" secondItem="5J4-af-ByO" secondAttribute="leading" id="aps-nD-tuv"/>
                         <constraint firstItem="QfN-HH-ev2" firstAttribute="top" secondItem="5J4-af-ByO" secondAttribute="top" id="tp2-LY-c3b"/>
                     </constraints>
