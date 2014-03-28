@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-Hq-QQ4" userLabel="Content View">
-                                <rect key="frame" x="-320" y="0.0" width="640" height="89"/>
+                                <rect key="frame" x="0.0" y="0.0" width="640" height="89"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -30,7 +30,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="h1n-Hq-QQ4" secondAttribute="bottom" id="1SK-Fm-JkP"/>
-                            <constraint firstItem="h1n-Hq-QQ4" firstAttribute="leading" secondItem="nlC-sI-D4z" secondAttribute="leading" constant="-320" id="5AO-1W-dV9"/>
+                            <constraint firstItem="h1n-Hq-QQ4" firstAttribute="leading" secondItem="nlC-sI-D4z" secondAttribute="leading" id="5AO-1W-dV9"/>
                             <constraint firstAttribute="trailing" secondItem="h1n-Hq-QQ4" secondAttribute="trailing" id="MX1-CY-W8h"/>
                             <constraint firstItem="h1n-Hq-QQ4" firstAttribute="top" secondItem="nlC-sI-D4z" secondAttribute="top" id="NEj-bg-NCH"/>
                         </constraints>
