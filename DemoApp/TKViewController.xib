@@ -29,9 +29,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="568" id="BNX-Ta-Vnq"/>
-                                    </constraints>
                                 </tableView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THq-aO-wCl" userLabel="Other view">
                                     <rect key="frame" x="320" y="0.0" width="320" height="568"/>
@@ -39,7 +36,6 @@
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="320" id="BqG-vU-sW0"/>
-                                        <constraint firstAttribute="height" constant="568" id="Cu6-QA-F1N"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -51,7 +47,6 @@
                                 <constraint firstAttribute="trailing" secondItem="THq-aO-wCl" secondAttribute="trailing" id="RYB-py-cq7"/>
                                 <constraint firstAttribute="width" constant="640" id="b12-op-bsO"/>
                                 <constraint firstAttribute="bottom" secondItem="yQn-WX-xZz" secondAttribute="bottom" id="bXQ-tA-w8j"/>
-                                <constraint firstAttribute="height" constant="568" id="dV3-pW-OAr"/>
                                 <constraint firstItem="THq-aO-wCl" firstAttribute="leading" secondItem="yQn-WX-xZz" secondAttribute="trailing" id="k9O-hr-qWW"/>
                                 <constraint firstItem="yQn-WX-xZz" firstAttribute="top" secondItem="QfN-HH-ev2" secondAttribute="top" id="quU-f0-76I"/>
                                 <constraint firstItem="yQn-WX-xZz" firstAttribute="leading" secondItem="QfN-HH-ev2" secondAttribute="leading" id="zKk-9o-Sjn"/>
@@ -62,6 +57,7 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="QfN-HH-ev2" secondAttribute="trailing" id="15D-4c-BTg"/>
                         <constraint firstAttribute="bottom" secondItem="QfN-HH-ev2" secondAttribute="bottom" id="PMA-SF-rzR"/>
+                        <constraint firstAttribute="height" secondItem="QfN-HH-ev2" secondAttribute="height" id="Y4O-aQ-5QZ"/>
                         <constraint firstItem="QfN-HH-ev2" firstAttribute="leading" secondItem="5J4-af-ByO" secondAttribute="leading" id="aps-nD-tuv"/>
                         <constraint firstItem="QfN-HH-ev2" firstAttribute="top" secondItem="5J4-af-ByO" secondAttribute="top" id="tp2-LY-c3b"/>
                     </constraints>
