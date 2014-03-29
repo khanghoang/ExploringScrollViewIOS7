@@ -29,11 +29,16 @@ UIScrollViewDelegate
 
 - (void)setScrollViewBackgroundColor:(UIColor *)color
 {
-    self.scrollView.backgroundColor = color;
+    self.containView.backgroundColor = color;
 }
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    CGFloat offset = scrollView.contentOffset.x;
+
+    if(offset > 60)
+        return;
+    
     if ([self.delegate respondsToSelector:@selector(beginScrollWithCell:)]) {
         [self.delegate performSelector:@selector(beginScrollWithCell:) withObject:self];
     }

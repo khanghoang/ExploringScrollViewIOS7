@@ -20,12 +20,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoApp/TKScrollCell.m"
-            timestampString = "417694694.660641"
+            timestampString = "417776160.410834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-scrollViewWillBeginDragging:"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -35,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoApp/TKViewController.m"
-            timestampString = "417694414.899899"
+            filePath = "DemoApp/TKScrollCell.m"
+            timestampString = "417776461.063439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-beginScrollWithCell:"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

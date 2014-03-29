@@ -10,6 +10,8 @@
 #import "UIView+AutoLayout.h"
 #import "TKScrollCell.h"
 
+CGFloat _random() { return (float)rand() / (float)RAND_MAX;}
+
 @interface TKViewController ()
 <
 UITableViewDelegate,
@@ -45,10 +47,15 @@ TKScrollCellProtocol
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TKScrollCell *scrollCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TKScrollCell class]) forIndexPath:indexPath];
-    scrollCell.delegate = self;
+    TKScrollCell *scrollCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TKScrollCell class])
+                                                               forIndexPath:indexPath];
 
-    [scrollCell setScrollViewBackgroundColor:[UIColor blueColor]];
+    CGFloat red = _random();
+    CGFloat green = _random();
+    CGFloat blue = _random();
+
+    [scrollCell setScrollViewBackgroundColor:[UIColor colorWithRed:red green:green blue:blue alpha:1.0f]];
+    scrollCell.delegate = self;
 
     return scrollCell;
 }
