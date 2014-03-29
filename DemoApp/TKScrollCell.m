@@ -24,7 +24,8 @@ UIScrollViewDelegate
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    [self.containView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    self.scrollView.scrollEnabled = YES;
+    self.scrollView.delegate = self;
 }
 
 - (void)setScrollViewBackgroundColor:(UIColor *)color
@@ -35,12 +36,11 @@ UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat offset = scrollView.contentOffset.x;
+//    if(offset > 60)
+//        return;
 
-    if(offset > 60)
-        return;
-    
-    if ([self.delegate respondsToSelector:@selector(beginScrollWithCell:)]) {
-        [self.delegate performSelector:@selector(beginScrollWithCell:) withObject:self];
+    if ([self.delegate respondsToSelector:@selector(scrollingCellDidBeginPull:)]) {
+        [self.delegate performSelector:@selector(scrollingCellDidBeginPull:) withObject:self];
     }
 }
 

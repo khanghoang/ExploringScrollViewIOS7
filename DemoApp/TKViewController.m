@@ -62,7 +62,7 @@ TKScrollCellProtocol
 
 #pragma mark - TKScrollCell delegate
 
-- (void)beginScrollWithCell:(id)cell
+- (void)beginScrollWithCell:(TKScrollCell *)cell
 {
     self.scrollView.userInteractionEnabled = NO;
 }
