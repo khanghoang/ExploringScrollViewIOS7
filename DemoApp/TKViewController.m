@@ -74,7 +74,9 @@ TKScrollCellProtocol
 
 - (void)scrollingCellDidEndPull:(id)cell
 {
-    self.scrollView.userInteractionEnabled = YES;
+    if (self.scrollView) {
+        self.scrollView.userInteractionEnabled = YES;
+    }
 }
 
 @end

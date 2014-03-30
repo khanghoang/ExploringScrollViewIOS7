@@ -29,6 +29,7 @@ UIScrollViewDelegate
     [super awakeFromNib];
     self.scrollView.scrollEnabled = YES;
     self.scrollView.delegate = self;
+    self.scrollView.contentSize = CGSizeMake(640, 89);
 }
 
 - (void)setScrollViewBackgroundColor:(UIColor *)color
@@ -61,16 +62,23 @@ UIScrollViewDelegate
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    if (decelerate) {
-        [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
-        self.isPulling = NO;
+    if (!decelerate) {
+        if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
+            [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
+            self.scrollView.contentOffset = CGPointZero;
+            self.scrollView.transform = CGAffineTransformIdentity;
+            self.isPulling = NO;
+        }
     }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
-    self.isPulling = NO;
+    if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
+        [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
+        self.scrollView.contentOffset = CGPointZero;
+        self.scrollView.transform = CGAffineTransformIdentity;
+        self.isPulling = NO;
+    }
 }
-
 @end
