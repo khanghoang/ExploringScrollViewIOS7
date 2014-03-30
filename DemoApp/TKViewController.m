@@ -62,9 +62,19 @@ TKScrollCellProtocol
 
 #pragma mark - TKScrollCell delegate
 
-- (void)beginScrollWithCell:(TKScrollCell *)cell
+- (void)scrollingCellDidBeginPull:(id)cell
 {
     self.scrollView.userInteractionEnabled = NO;
+}
+
+- (void)scrollingCell:(id)cell pullOutterWithOffset:(NSNumber *)offset
+{
+    [self.scrollView setContentOffset:CGPointMake([offset floatValue], 0)];
+}
+
+- (void)scrollingCellDidEndPull:(id)cell
+{
+    self.scrollView.userInteractionEnabled = YES;
 }
 
 @end

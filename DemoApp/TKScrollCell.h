@@ -11,7 +11,7 @@
 @protocol TKScrollCellProtocol <NSObject>
 
 - (void)scrollingCellDidBeginPull:(id)cell;
-- (void)scrollingCell:(id)cell pullOutterWithOffset:(CGFloat)offset;
+- (void)scrollingCell:(id)cell pullOutterWithOffset:(NSNumber *)offset;
 - (void)scrollingCellDidEndPull:(id)cell;
 
 @end

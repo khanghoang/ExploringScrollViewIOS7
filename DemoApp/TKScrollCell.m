@@ -9,11 +9,14 @@
 #import "TKScrollCell.h"
 #import "UIView+AutoLayout.h"
 
+#define PULL_THRESHOLD 60
+
 @interface TKScrollCell ()
 <
 UIScrollViewDelegate
 >
 
+@property (assign, nonatomic) BOOL isPulling;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *containView;
 
@@ -35,13 +38,39 @@ UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat offset = scrollView.contentOffset.x;
-//    if(offset > 60)
-//        return;
+    CGFloat offset = self.scrollView.contentOffset.x;
 
-    if ([self.delegate respondsToSelector:@selector(scrollingCellDidBeginPull:)]) {
-        [self.delegate performSelector:@selector(scrollingCellDidBeginPull:) withObject:self];
+    // should we start pulling?
+    if(offset > PULL_THRESHOLD && !_isPulling)
+    {
+        if ([self.delegate respondsToSelector:@selector(scrollingCellDidBeginPull:)]) {
+            [self.delegate performSelector:@selector(scrollingCellDidBeginPull:) withObject:self];
+        }
+
+        self.isPulling = YES;
     }
+
+    if (self.isPulling) {
+        CGFloat scrollDistance = MAX(0, offset - PULL_THRESHOLD);
+        if ([self.delegate respondsToSelector:@selector(scrollingCell:pullOutterWithOffset:)]) {
+            [self.delegate performSelector:@selector(scrollingCell:pullOutterWithOffset:) withObject:self withObject:@(scrollDistance)];
+        }
+    }
+
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (decelerate) {
+        [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
+        self.isPulling = NO;
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
+    self.isPulling = NO;
 }
 
 @end

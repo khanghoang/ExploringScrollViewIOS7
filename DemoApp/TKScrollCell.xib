@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-Hq-QQ4" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="0.0" width="500" height="89"/>
+                                <rect key="frame" x="0.0" y="0.0" width="321" height="89"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.62745100259999997" green="0.37647062539999998" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="500" id="Dd0-8Q-qBZ"/>
+                                    <constraint firstAttribute="width" constant="321" id="Dd0-8Q-qBZ"/>
                                     <constraint firstAttribute="height" constant="89" id="buZ-az-Ig7"/>
                                 </constraints>
                             </view>
