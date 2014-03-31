@@ -14,16 +14,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlC-sI-D4z">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlC-sI-D4z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-Hq-QQ4" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="0.0" width="640" height="89"/>
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="89"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82u-jG-aYx">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="89" id="qhI-jD-Hmf"/>
+                                            <constraint firstAttribute="width" constant="320" id="zne-tX-LeX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.62745100259999997" green="0.37647062539999998" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="640" id="Jm2-T9-Klj"/>
+                                    <constraint firstAttribute="width" constant="800" id="Jm2-T9-Klj"/>
+                                    <constraint firstItem="82u-jG-aYx" firstAttribute="top" secondItem="h1n-Hq-QQ4" secondAttribute="top" id="aw6-5S-o6c"/>
+                                    <constraint firstItem="82u-jG-aYx" firstAttribute="leading" secondItem="h1n-Hq-QQ4" secondAttribute="leading" id="ccz-r4-qie"/>
                                     <constraint firstAttribute="height" constant="89" id="gLW-T6-cOK"/>
                                 </constraints>
                             </view>
@@ -47,7 +60,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="containView" destination="h1n-Hq-QQ4" id="P4U-BV-agl"/>
+                <outlet property="containView" destination="82u-jG-aYx" id="hXg-RJ-3wl"/>
                 <outlet property="scrollView" destination="nlC-sI-D4z" id="kIJ-ur-dCs"/>
             </connections>
         </tableViewCell>

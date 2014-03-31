@@ -37,7 +37,7 @@ TKScrollCellProtocol
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 100;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,19 +64,18 @@ TKScrollCellProtocol
 
 - (void)scrollingCellDidBeginPull:(id)cell
 {
-    self.scrollView.userInteractionEnabled = NO;
+    self.scrollView.scrollEnabled = NO;
 }
 
 - (void)scrollingCell:(id)cell pullOutterWithOffset:(NSNumber *)offset
 {
     [self.scrollView setContentOffset:CGPointMake([offset floatValue], 0)];
+    self.scrollView.scrollEnabled = YES;
 }
 
 - (void)scrollingCellDidEndPull:(id)cell
 {
-    if (self.scrollView) {
-        self.scrollView.userInteractionEnabled = YES;
-    }
+    self.scrollView.scrollEnabled = YES;
 }
 
 @end

@@ -9,7 +9,7 @@
 #import "TKScrollCell.h"
 #import "UIView+AutoLayout.h"
 
-#define PULL_THRESHOLD 60
+#define PULL_THRESHOLD 80
 
 @interface TKScrollCell ()
 <
@@ -27,9 +27,7 @@ UIScrollViewDelegate
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    self.scrollView.scrollEnabled = YES;
     self.scrollView.delegate = self;
-    self.scrollView.contentSize = CGSizeMake(640, 89);
 }
 
 - (void)setScrollViewBackgroundColor:(UIColor *)color
@@ -39,7 +37,7 @@ UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat offset = self.scrollView.contentOffset.x;
+    CGFloat offset = scrollView.contentOffset.x;
 
     // should we start pulling?
     if(offset > PULL_THRESHOLD && !_isPulling)
@@ -56,32 +54,30 @@ UIScrollViewDelegate
         if ([self.delegate respondsToSelector:@selector(scrollingCell:pullOutterWithOffset:)]) {
             [self.delegate scrollingCell:self pullOutterWithOffset:@(scrollDistance)];
         }
+        self.containView.transform = CGAffineTransformMakeTranslation(scrollDistance * 2, 0);
     }
-
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
     if (!decelerate) {
-        if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
-            [self scrollViewEndScrolling];
-        }
+        [self scrollViewEndScrolling];
     }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
-        [self scrollViewEndScrolling];
-    }
+    [self scrollViewEndScrolling];
 }
 
 - (void)scrollViewEndScrolling
 {
-    [self.delegate scrollingCellDidEndPull:self];
-    self.scrollView.contentOffset = CGPointZero;
-    self.scrollView.transform = CGAffineTransformIdentity;
-    self.isPulling = NO;
+    if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
+        [self.delegate scrollingCellDidEndPull:self];
+        self.scrollView.contentOffset = CGPointZero;
+        self.scrollView.transform = CGAffineTransformIdentity;
+        self.isPulling = NO;
+    }
 }
 
 @end
