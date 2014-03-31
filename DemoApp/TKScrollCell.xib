@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -14,21 +14,37 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nlC-sI-D4z">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlC-sI-D4z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="h1n-Hq-QQ4" userLabel="Content View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-Hq-QQ4" userLabel="Content View">
                                 <rect key="frame" x="0.0" y="0.0" width="640" height="89"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.62745100259999997" green="0.37647062539999998" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="640" id="Jm2-T9-Klj"/>
+                                    <constraint firstAttribute="height" constant="89" id="gLW-T6-cOK"/>
+                                </constraints>
                             </view>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h1n-Hq-QQ4" secondAttribute="trailing" id="HCa-bQ-dtg"/>
+                            <constraint firstItem="h1n-Hq-QQ4" firstAttribute="leading" secondItem="nlC-sI-D4z" secondAttribute="leading" id="O9Q-yE-aMw"/>
+                            <constraint firstAttribute="bottom" secondItem="h1n-Hq-QQ4" secondAttribute="bottom" id="OKm-Mb-uyM"/>
+                            <constraint firstItem="h1n-Hq-QQ4" firstAttribute="top" secondItem="nlC-sI-D4z" secondAttribute="top" id="rD8-XZ-IsD"/>
+                        </constraints>
                         <connections>
                             <outlet property="delegate" destination="-1" id="Yxh-42-vt9"/>
                         </connections>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="nlC-sI-D4z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Tp-4G-XvL"/>
+                    <constraint firstAttribute="bottom" secondItem="nlC-sI-D4z" secondAttribute="bottom" id="F9C-72-QRa"/>
+                    <constraint firstAttribute="trailing" secondItem="nlC-sI-D4z" secondAttribute="trailing" id="GGb-hw-0iV"/>
+                    <constraint firstItem="nlC-sI-D4z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ddZ-RY-LvB"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="containView" destination="h1n-Hq-QQ4" id="P4U-BV-agl"/>

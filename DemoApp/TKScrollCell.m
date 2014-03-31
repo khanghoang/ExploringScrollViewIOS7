@@ -45,7 +45,7 @@ UIScrollViewDelegate
     if(offset > PULL_THRESHOLD && !_isPulling)
     {
         if ([self.delegate respondsToSelector:@selector(scrollingCellDidBeginPull:)]) {
-            [self.delegate performSelector:@selector(scrollingCellDidBeginPull:) withObject:self];
+            [self.delegate scrollingCellDidBeginPull:self];
         }
 
         self.isPulling = YES;
@@ -54,7 +54,7 @@ UIScrollViewDelegate
     if (self.isPulling) {
         CGFloat scrollDistance = MAX(0, offset - PULL_THRESHOLD);
         if ([self.delegate respondsToSelector:@selector(scrollingCell:pullOutterWithOffset:)]) {
-            [self.delegate performSelector:@selector(scrollingCell:pullOutterWithOffset:) withObject:self withObject:@(scrollDistance)];
+            [self.delegate scrollingCell:self pullOutterWithOffset:@(scrollDistance)];
         }
     }
 
@@ -64,10 +64,7 @@ UIScrollViewDelegate
 {
     if (!decelerate) {
         if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
-            [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
-            self.scrollView.contentOffset = CGPointZero;
-            self.scrollView.transform = CGAffineTransformIdentity;
-            self.isPulling = NO;
+            [self scrollViewEndScrolling];
         }
     }
 }
@@ -75,10 +72,16 @@ UIScrollViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
-        [self.delegate performSelector:@selector(scrollingCellDidEndPull:)];
-        self.scrollView.contentOffset = CGPointZero;
-        self.scrollView.transform = CGAffineTransformIdentity;
-        self.isPulling = NO;
+        [self scrollViewEndScrolling];
     }
 }
+
+- (void)scrollViewEndScrolling
+{
+    [self.delegate scrollingCellDidEndPull:self];
+    self.scrollView.contentOffset = CGPointZero;
+    self.scrollView.transform = CGAffineTransformIdentity;
+    self.isPulling = NO;
+}
+
 @end

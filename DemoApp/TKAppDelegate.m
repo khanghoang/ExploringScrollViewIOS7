@@ -20,14 +20,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
-    
-    return YES;
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    TKViewController *vc = [[TKViewController alloc] init];
-    self.window.rootViewController = vc;
-    [self.window makeKeyAndVisible];
-    // Override point for customization after application launch.
-    return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

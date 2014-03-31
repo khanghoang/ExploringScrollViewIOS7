@@ -18,11 +18,9 @@
 		B45D521C18E535F400DBD47F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D521B18E535F400DBD47F /* XCTest.framework */; };
 		B45D521D18E535F400DBD47F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D51FC18E535F400DBD47F /* Foundation.framework */; };
 		B45D521E18E535F400DBD47F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D520018E535F400DBD47F /* UIKit.framework */; };
-		B45D522618E535F400DBD47F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B45D522418E535F400DBD47F /* InfoPlist.strings */; };
 		B45D522818E535F400DBD47F /* DemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45D522718E535F400DBD47F /* DemoAppTests.m */; };
 		B45D523218E53E7400DBD47F /* TKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45D523118E53E7400DBD47F /* TKViewController.xib */; };
 		B461D76918E56A1900DA6240 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B461D76818E56A1900DA6240 /* UIView+AutoLayout.m */; };
-		B461D76B18E5701D00DA6240 /* ExploringScrollViewIOS7-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B461D76A18E5701D00DA6240 /* ExploringScrollViewIOS7-Info.plist */; };
 		B461D76F18E579CD00DA6240 /* TKScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B461D76D18E579CD00DA6240 /* TKScrollCell.m */; };
 		B461D77018E579CD00DA6240 /* TKScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B461D76E18E579CD00DA6240 /* TKScrollCell.xib */; };
 /* End PBXBuildFile section */
@@ -52,8 +50,6 @@
 		B45D521418E535F400DBD47F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B45D521A18E535F400DBD47F /* ExploringScrollViewIOS7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploringScrollViewIOS7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45D521B18E535F400DBD47F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B45D522318E535F400DBD47F /* ExploringScrollViewIOS7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExploringScrollViewIOS7Tests-Info.plist"; sourceTree = "<group>"; };
-		B45D522518E535F400DBD47F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B45D522718E535F400DBD47F /* DemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppTests.m; sourceTree = "<group>"; };
 		B45D523118E53E7400DBD47F /* TKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKViewController.xib; sourceTree = "<group>"; };
 		B461D76718E56A1900DA6240 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
@@ -152,18 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				B45D522718E535F400DBD47F /* DemoAppTests.m */,
-				B45D522218E535F400DBD47F /* Supporting Files */,
 			);
 			path = DemoAppTests;
-			sourceTree = "<group>";
-		};
-		B45D522218E535F400DBD47F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B45D522318E535F400DBD47F /* ExploringScrollViewIOS7Tests-Info.plist */,
-				B45D522418E535F400DBD47F /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +234,6 @@
 			files = (
 				B461D77018E579CD00DA6240 /* TKScrollCell.xib in Resources */,
 				B45D521518E535F400DBD47F /* Images.xcassets in Resources */,
-				B461D76B18E5701D00DA6240 /* ExploringScrollViewIOS7-Info.plist in Resources */,
 				B45D520718E535F400DBD47F /* InfoPlist.strings in Resources */,
 				B45D523218E53E7400DBD47F /* TKViewController.xib in Resources */,
 			);
@@ -258,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45D522618E535F400DBD47F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +284,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				B45D520618E535F400DBD47F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B45D522418E535F400DBD47F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B45D522518E535F400DBD47F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
