@@ -31,8 +31,8 @@ TKScrollCellProtocol
 {
     [super viewDidLoad];
 
-    [self.containView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TKScrollCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([TKScrollCell class])];
+    self.scrollView.contentSize = CGSizeMake(640, 568);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -70,7 +70,6 @@ TKScrollCellProtocol
 - (void)scrollingCell:(id)cell pullOutterWithOffset:(NSNumber *)offset
 {
     [self.scrollView setContentOffset:CGPointMake([offset floatValue], 0)];
-    self.scrollView.scrollEnabled = YES;
 }
 
 - (void)scrollingCellDidEndPull:(id)cell

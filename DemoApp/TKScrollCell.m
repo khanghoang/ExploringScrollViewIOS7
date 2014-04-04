@@ -28,6 +28,7 @@ UIScrollViewDelegate
 {
     [super awakeFromNib];
     self.scrollView.delegate = self;
+    self.scrollView.contentSize = CGSizeMake(800, 90);
 }
 
 - (void)setScrollViewBackgroundColor:(UIColor *)color
@@ -40,7 +41,7 @@ UIScrollViewDelegate
     CGFloat offset = scrollView.contentOffset.x;
 
     // should we start pulling?
-    if(offset > PULL_THRESHOLD && !_isPulling)
+    if(offset > PULL_THRESHOLD && !self.isPulling)
     {
         if ([self.delegate respondsToSelector:@selector(scrollingCellDidBeginPull:)]) {
             [self.delegate scrollingCellDidBeginPull:self];
@@ -54,7 +55,7 @@ UIScrollViewDelegate
         if ([self.delegate respondsToSelector:@selector(scrollingCell:pullOutterWithOffset:)]) {
             [self.delegate scrollingCell:self pullOutterWithOffset:@(scrollDistance)];
         }
-        self.containView.transform = CGAffineTransformMakeTranslation(scrollDistance * 2, 0);
+        self.scrollView.transform = CGAffineTransformMakeTranslation(scrollDistance, 0);
     }
 }
 
@@ -74,9 +75,11 @@ UIScrollViewDelegate
 {
     if ([self.delegate respondsToSelector:@selector(scrollingCellDidEndPull:)]) {
         [self.delegate scrollingCellDidEndPull:self];
+
+        self.isPulling = NO;
+
         self.scrollView.contentOffset = CGPointZero;
         self.scrollView.transform = CGAffineTransformIdentity;
-        self.isPulling = NO;
     }
 }
 
